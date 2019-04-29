@@ -6,6 +6,7 @@ class RestaurantsController < ApplicationController
   end
 
   def show
+    render json: @restaurant, product_categories: true
   end
 
   def search
